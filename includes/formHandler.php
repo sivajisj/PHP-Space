@@ -12,7 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     echo $lastname;
     echo "</br>";
     echo $favouritepet;
+    if(empty($firstname)){
+        exit();
+    }
 
-    header("Location:../index.php");
 }
 ?>
