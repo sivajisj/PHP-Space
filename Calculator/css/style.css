@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+input[type="number"], select {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:hover, select:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+button {
+    padding: 15px 30px;
+    background: #2575fc;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: #6a11cb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type="number"], select, button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="number"], select, button {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+.calc-error {
+    color: #ff4d4d;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    animation: shake 0.5s ease;
+}
+
+.calc-answer {
+    color: #11eb44;
+    background-color: rgba(23, 133, 60, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(9, 210, 39, 0.2);
+    animation: shake 0.5s ease;
+}

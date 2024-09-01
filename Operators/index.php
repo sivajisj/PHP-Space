@@ -14,9 +14,19 @@
     $num2 = 4;
     echo $a . " " . $b; //Concatenation
     echo '<br>';
-    echo "Addition of num1 and num2 is ".$num1 + $num2;
+    echo "Addition of num1 and num2 is ".$num1++ + $num2++;
     echo '<br>';
     echo "multiplication of num1 and num2 is ".$num1 * $num2;
+    
+    //Comparision  ==
+    //assignment =
+    //Strict comparison ===
+    //conditional statement : 
+    //increment
+    // pre increment ++a
+    // post increment a++
+
+    
     ?>
 </body>
 </html>
